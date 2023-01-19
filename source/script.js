@@ -1,4 +1,4 @@
-function showDate(event) {
+function informTime(event) {
   if (event.target.value.length > 0) {
     let currentTime = moment()
       .tz(event.target.value)
@@ -8,5 +8,5 @@ function showDate(event) {
   }
 }
 
-let selectElement = document.querySelector("#city");
-selectElement.addEventListener("change", showDate);
+let selectElement = document.querySelector("#list-of-cities");
+selectElement.addEventListener("change", informTime);
