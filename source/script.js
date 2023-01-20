@@ -91,7 +91,9 @@ function informSelectedTime(event) {
 
       <div class="col-6 date">${selectedCurrentDate}</div>
       <div class="col-6 time">${selectedCurrentTime}</div>
-      </div>`;
+      </div>
+      
+      <a href="index.html">Back to home page</a>`;
     }
   }
 
