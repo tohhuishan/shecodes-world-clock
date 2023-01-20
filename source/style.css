@@ -1,3 +1,64 @@
+body {
+  background: rgb(0, 179, 255);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
 h1 {
-  font-size: 16px;
+  font-weight: 600;
+  margin: 16px;
+  text-align: center;
+}
+
+.card {
+  background: rgb(244, 167, 237);
+  border-radius: 5px;
+  margin: 60px auto 20px auto;
+  padding: 20px 40px;
+}
+
+select {
+  margin-bottom: 20px;
+}
+
+div.row {
+  border-radius: 5px;
+  margin: 10px 2px;
+  padding: 10px;
+  transition: all 200ms ease-in-out;
+}
+
+div.row:hover {
+  background: rgb(202, 115, 242);
+  color: white;
+}
+
+.city {
+  font-size: 24px;
+}
+
+.date {
+  font-size: 15px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.time {
+  font-size: 36px;
+  position: relative;
+  top: -30px;
+  text-align: right;
+}
+
+.time span {
+  font-size: 12px;
+  font-weight: 800;
+}
+
+footer {
+  background: rgb(147, 218, 248);
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 18px 0;
+  text-align: center;
 }
