@@ -86,12 +86,14 @@ function informSelectedTime(event) {
       let displaySelectedTimeElement =
         document.querySelector(".displayed-cities");
 
-      displaySelectedTimeElement.innerHTML = `<div class="row">
-      <div class="col-md-12 city">${cityName}</div>
-
-      <div class="col-md-6 date">${selectedCurrentDate}</div>
-      <div class="col-md-6 time">${selectedCurrentTime}</div>
-      </div>
+      displaySelectedTimeElement.innerHTML = `              
+          <div class="holder">
+            <div class="d-flex justify-content-between">
+              <div class="city">${cityName}</div>
+              <div class="time">${selectedCurrentTime}</div>
+            </div>
+            <div class="date">${selectedCurrentDate}</div>
+          </div>
       
       <a href="index.html">Back to home page</a>`;
     }
