@@ -22,14 +22,14 @@ select {
   padding: 8px;
 }
 
-div.d-flex {
+div.holder {
   border-radius: 5px;
   margin: 10px 2px;
   padding: 10px;
   transition: all 200ms ease-in-out;
 }
 
-div.d-flex:hover {
+div.holder:hover {
   background: rgb(202, 115, 242);
   color: white;
 }
@@ -44,7 +44,7 @@ div.d-flex:hover {
   margin-bottom: 0;
   border-bottom: 0;
   position: relative;
-  top: -45px;
+  top: -10px;
 }
 
 .time {
