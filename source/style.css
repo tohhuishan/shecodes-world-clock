@@ -54,6 +54,7 @@ div.holder:hover {
 
 .time span {
   font-size: 6px;
+  font-weight: bold;
   position: relative;
   top: -5px;
 }
@@ -64,4 +65,67 @@ footer {
   margin: 0 auto;
   padding: 18px 0;
   text-align: center;
+}
+
+@media (max-width: 340px) {
+  div.holder {
+    margin: 20px 2px 50px 2px;
+    padding: 10px 10px 20px 10px;
+    transition: all 200ms ease-in-out;
+  }
+
+  .time {
+    position: relative;
+    top: 36px;
+    text-align: center;
+  }
+
+  .date {
+    position: relative;
+    top: -24px;
+  }
+}
+
+@media (max-width: 310px) {
+  div.holder {
+    margin: 20px 2px 50px 2px;
+    padding: 10px 10px 20px 10px;
+    transition: all 200ms ease-in-out;
+  }
+
+  .time {
+    position: relative;
+    top: 30px;
+    text-align: center;
+  }
+
+  .date {
+    position: relative;
+    top: -26px;
+  }
+}
+
+@media (max-width: 280px) {
+  div.holder {
+    margin: 20px 2px 50px 2px;
+    padding: 10px 10px 20px 10px;
+    transition: all 200ms ease-in-out;
+  }
+
+  .time {
+    position: relative;
+    top: 44px;
+    left: -20px;
+  }
+
+  .time span {
+    position: relative;
+    top: -40px;
+    left: 54px;
+  }
+
+  .date {
+    position: relative;
+    top: -60px;
+  }
 }

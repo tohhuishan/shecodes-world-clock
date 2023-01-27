@@ -28,19 +28,17 @@ function informBangkokTime() {
   bangkokTimeElement.innerHTML = bangkokCurrentTime;
 }
 
-function informShanghaiTime() {
-  let shanghaiDateElement = document.querySelector(".shanghai .date");
-  let shanghaiTimeElement = document.querySelector(".shanghai .time");
+function informMacauTime() {
+  let macauDateElement = document.querySelector(".macau .date");
+  let macauTimeElement = document.querySelector(".macau .time");
 
-  let shanghaiCurrentDate = moment()
-    .tz("Asia/Shanghai")
-    .format("dddd, D MMMM YYYY");
-  let shanghaiCurrentTime = moment()
-    .tz("Asia/Shanghai")
+  let macauCurrentDate = moment().tz("Asia/Macau").format("dddd, D MMMM YYYY");
+  let macauCurrentTime = moment()
+    .tz("Asia/Macau")
     .format(`hh:mm:ss [<span>]A[</span>]`);
 
-  shanghaiDateElement.innerHTML = shanghaiCurrentDate;
-  shanghaiTimeElement.innerHTML = shanghaiCurrentTime;
+  macauDateElement.innerHTML = macauCurrentDate;
+  macauTimeElement.innerHTML = macauCurrentTime;
 }
 
 function informAucklandTime() {
@@ -61,7 +59,7 @@ function informAucklandTime() {
 function informTime() {
   informLondonTime();
   informBangkokTime();
-  informShanghaiTime();
+  informMacauTime();
   informAucklandTime();
 }
 
